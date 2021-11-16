@@ -31,9 +31,7 @@ public class Processing extends Thread {
                 } else
                     System.out.println("Client " + socket.getPort() + " login failed");
                 ID = DataIS.readInt();
-                System.out.println(ID);
                 Pass = DataIS.readUTF();
-                System.out.println(Pass);
                 DataOS.writeBoolean(acc.logIn(ID, Pass));
                 count++;
             }
